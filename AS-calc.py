@@ -1,7 +1,7 @@
 while True:
 	err = False
 	try:
-		a = int(input("\n Please enter the first number of the arithmetic sequence. \n"))
+		a = int(input("Please enter the first number of the arithmetic sequence. \n"))
 		n = int(input("Please enter the total numbers in the arithmetic sequence. \n"))
 		d = int(input("Please enter the common difference.\n"))
 	except:
