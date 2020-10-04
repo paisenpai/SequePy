@@ -1,4 +1,4 @@
-while True:
+.while True:
 	err = False
 	try:
 		a = int(input("Please enter the first number of the arithmetic sequence. \n"))
