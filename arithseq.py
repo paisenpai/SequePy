@@ -1,16 +1,18 @@
-while True:
-	err = False
-	try:
-		a = int(input("Please enter the first number of the arithmetic sequence. \n"))
-		n = int(input("Please enter the total numbers in the arithmetic sequence. \n"))
-		d = int(input("Please enter the common difference.\n"))
-	except:
-		print("Invalid Character")
-		err = True
+def Init():
+	while True:
+		err = False
+		try:
+			a = int(input("Please enter the first number of the arithmetic sequence. \n"))
+			n = int(input("Please enter the total numbers in the arithmetic sequence. \n"))
+			d = int(input("Please enter the common difference.\n"))
+		except:
+			print("Invalid Character")
+			err = True
 
-	if not err:
-		total = (n * (2 * a + (n - 1) * d)) / 2
-		tn = a + (n - 1 ) * d
+		if not err:
+			total = (n * (2 * a + (n - 1) * d)) / 2
+			tn = a + (n - 1 ) * d
 
-		print ('The sum of the arithmetic sequence = ', total)
-		print ('The nth term of the arithmetic sequence = ', tn)
+			print ('The sum of the arithmetic sequence = ', total)
+			print ('The nth term of the arithmetic sequence = ', tn)
+			
