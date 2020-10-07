@@ -48,7 +48,8 @@ def Init():
                         print("The leg shouldn't be longer than the"\
                               " hypotenuse")
                         raise(ValueError)
-                    print("\nThe length of the leg is ")
+                    print("\nResult:")
+                    print("The length of the leg is ")
                     # use defined function
                     print(calcLeg(leg, hypo), '\n')
                     # releases while loop if success
@@ -65,7 +66,8 @@ def Init():
                                        " first leg\n"))
                     legB = float(input("Enter the length of the"\
                                        " second leg\n"))
-                    print("\nThe length of the hypotenuse is ")
+                    print("\nResult:")
+                    print("The length of the hypotenuse is ")
                     # use defined function
                     print(calcHypo(legA, legB), '\n')
                     # releases while loop if success

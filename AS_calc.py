@@ -13,8 +13,9 @@ def Init():
             total = (n * (2 * a + (n - 1) * d)) / 2
             tn = a + (n - 1 ) * d
 
-            print ('\nThe sum of the arithmetic sequence = ', total)
-            print ('The nth term of the arithmetic sequence = ', tn, '\n')
+            print('\nResult:')
+            print('The sum of the arithmetic sequence = ', total)
+            print('The nth term of the arithmetic sequence = ', tn, '\n')
             closer = str(input("Enter 1 to exit.\nPress any key to continue.\n"))
             if(closer == '1'):
                 return

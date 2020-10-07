@@ -5,8 +5,8 @@ def Init():
             height = int(input("input the height of the triangle: "))
 
             area = (height * base) / 2
-
-            print('\nthe area of the triangle is: %s\n' % area)
+            print('\n2Results:')
+            print('\The area of the triangle is: %s\n' % area)
         except:
             print("That's not a valid number")
         

@@ -12,12 +12,12 @@ def Init():
         value = []
         for i in range(n):
             value.append(a+(i)*d)
-        
         print("\nResults:")
         for i in value:
-            print(i)
+            print('1/',i, sep='')
         
         closer = str(input("Enter 1 to exit.\nPress any key to continue.\n"))
         if(closer == '1'):
             return
                 
+
