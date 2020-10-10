@@ -19,4 +19,3 @@ def Init():
             closer = str(input("Enter 1 to exit.\nPress any key to continue.\n"))
             if(closer == '1'):
                 return
-                
