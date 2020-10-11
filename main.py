@@ -2,6 +2,7 @@ import AS_calc
 import pythagorean
 import trianglecalc_area
 import AS_seqgen
+import AS_difference
 import GS_seqgen
 import HS_seqgen
 import FS_seqgen
@@ -14,12 +15,13 @@ def main():
             try:
                 # request user input
                 equationType = int(input(
-                "Press 1 to generate arithmetic sequence\n"
-                "Press 2 to generate geometric sequence\n"
-                "Press 3 to generate harmonic sequence\n"
-                "Press 4 to generate fibonacci sequence\n"
-                "Press 5 to use pythagorean theorem\n"
-                "Press 6 to get area of triangle\n"))
+                "Press 1 to generate arithmetic sequence,\nsum and nth term, d is found\n"
+                "Press 2 to find difference of and, \nsum of an arithmetic sequence, An is found\n"
+                "Press 3 to generate geometric sequence\n"
+                "Press 4 to generate harmonic sequence\n"
+                "Press 5 to generate fibonacci sequence\n"
+                "Press 6 to use pythagorean theorem\n"
+                "Press 7 to get area of triangle\n"))
                 if not(equationType > 0 and equationType <= 7):
                     # check if input is within the choices,
                     # throws error if wrong input
@@ -33,14 +35,16 @@ def main():
         if (equationType == 1):
             AS_seqgen.Init()
         elif (equationType == 2):
-            GS_seqgen.Init()
+        	AS_difference.Init()
         elif (equationType == 3):
+            GS_seqgen.Init()
+        elif (equationType == 4):
             HS_seqgen.Init()
-        elif(equationType == 4):
-            FS_seqgen.Init()
         elif(equationType == 5):
-            pythagorean.Init()
+            FS_seqgen.Init()
         elif(equationType == 6):
+            pythagorean.Init()
+        elif(equationType == 7):
             trianglecalc_area.Init()
             
 if __name__ == "__main__":
