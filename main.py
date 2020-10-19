@@ -6,6 +6,7 @@ import AS_difference
 import GS_seqgen
 import HS_seqgen
 import FS_seqgen
+import AlgePy
 
 def main():
     while True:
@@ -21,8 +22,9 @@ def main():
                 "Press 4 to generate harmonic sequence\n"
                 "Press 5 to generate fibonacci sequence\n"
                 "Press 6 to use pythagorean theorem\n"
-                "Press 7 to get area of triangle\n"))
-                if not(equationType > 0 and equationType <= 7):
+                "Press 7 to get area of triangle\n"
+                "Press 8 to use Algebra Mode\n"))
+                if not(equationType > 0 and equationType <= 8):
                     # check if input is within the choices,
                     # throws error if wrong input
                     raise(TypeError)
@@ -46,6 +48,8 @@ def main():
             pythagorean.Init()
         elif(equationType == 7):
             trianglecalc_area.Init()
+        elif(equationType == 8):
+            AlgePy.Init()
             
 if __name__ == "__main__":
 	main()
